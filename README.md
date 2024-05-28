@@ -37,45 +37,28 @@ A card visual was used to represent count of Closed_Jobs.
 ![image](https://github.com/MaliPadya/Power_BI/assets/170869800/c106b7c3-071a-4928-a0f0-18e6ecf49f3d)
 
         
- - Step 16 : New measure was created to find  % of customers,
+ - Step 16 : New measure was created to find  Candidate Markup_%,
  
- Following DAX expression was written to find % of customers,
+ Following DAX expression was written to find Candidate Markup_%,
  
-         % Customers = (DIVIDE(airline_passenger_satisfaction[Count of Customers], 129880)*100)
+         Candidate Markup % = Start_Ends[AGREED BILL RATE]/Start_Ends[AGREED PAY RATE]
  
  A card visual was used to represent this perecntage.
  
- Snap of % of customers who preferred business class
  
- ![Snap_Percentage](https://user-images.githubusercontent.com/102996550/174090653-da02feb4-4775-4a95-affb-a211ca985d07.jpg)
+ ![image](https://github.com/MaliPadya/Power_BI/assets/170869800/4c933e84-2b33-4988-8cb4-2bb4ac04ee89)
 
  
- - Step 17 : New measure was created to calculate total distance travelled by flights & a card visual was used to represent total distance.
+ - Step 17 : New measure was created to calculate Jobs which are in 0 Subs.
  
- Following DAX expression was written to find total distance,
+ Following DAX expression was written to find count of 0 Sub Jobs,
  
-         Total Distance Travelled = SUM(airline_passenger_satisfaction[Flight Distance])
+         0 Sub positions = CALCULATE(COUNT('Job_Table'[JOB COMPANY]),'Job_Table'[First External Submittal Date]= BLANK(), 'Job_Table'[JOB STATUS] IN {"OPEN","ON HOLD"})
     
- A card visual was used to represent this total distance.
+ A card visual was used to represent this Jobs which are in 0 Subs. 
  
+ ![image](https://github.com/MaliPadya/Power_BI/assets/170869800/715f389d-75be-4b3b-9093-75555a16479b)
  
- ![Snap_3](https://user-images.githubusercontent.com/102996550/174091618-bf770d6c-34c6-44d4-9f5e-49583a6d5f68.jpg)
- 
- - Step 18 : The report was then published to Power BI Service.
- 
- 
-![Publish_Message](https://user-images.githubusercontent.com/102996550/174094520-3a845196-97e6-4d44-8760-34a64abc3e77.jpg)
 
-# Snapshot of Dashboard (Power BI Service)
-
-![dashboard_snapo](https://user-images.githubusercontent.com/102996550/174096257-11f1aae5-203d-44fc-bfca-25d37faf3237.jpg)
-
- 
- # Report Snapshot (Power BI DESKTOP)
-
- 
-![Dashboard_upload](https://user-images.githubusercontent.com/102996550/174074051-4f08287a-0568-4fdf-8ac9-6762e0d8fa94.jpg)
-
-# Insights
 
 
