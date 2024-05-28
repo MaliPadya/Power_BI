@@ -22,27 +22,19 @@ The VMS (Vendor Management System) Power BI dashboard provides managers with com
 Snap of RLS ,
 
 ![image](https://github.com/MaliPadya/Power_BI/assets/170869800/ef19c2ce-2ebf-4ae1-9c67-bda3a1fbdaed)
-
-
-- Step 10 : Published report on Power Bi Service and scheduled daily Refresh
-
-           
-  
         
-Snap of new calculated column ,
 
-![image](https://github.com/MaliPadya/Power_BI/assets/170869800/a7065868-6603-4e6d-85ae-e41451f095a3)
-
+Some Example of calculation
         
-- Step 15 : New measure was created to find total count of customers.
+- Step 10 : New measure was created to find total count Closed Requirement.
 
 Following DAX expression was written for the same,
         
-        Count of Customers = COUNT(airline_passenger_satisfaction[ID])
+        Closed = CALCULATE(COUNT('Job_Table'[JOB COMPANY]),'Job_Table'[JOB STATUS]="CLOSED")
         
-A card visual was used to represent count of customers.
+A card visual was used to represent count of Closed_Jobs.
 
-![Snap_Count](https://user-images.githubusercontent.com/102996550/174090154-424dc1a4-3ff7-41f8-9617-17a2fb205825.jpg)
+![image](https://github.com/MaliPadya/Power_BI/assets/170869800/c106b7c3-071a-4928-a0f0-18e6ecf49f3d)
 
         
  - Step 16 : New measure was created to find  % of customers,
