@@ -17,33 +17,17 @@ The VMS (Vendor Management System) Power BI dashboard provides managers with com
 - Step 6 : Created Vertual Date Column using "CalenderAuto" DAX
 - Step 7 : used differend relationship for different calculation according to defined parameter using "USERELATIONSHI" Function
 - Step 8 : create Ignore table if i want to ignore some entries
-- Step 9 : Create Row Level security For Data Privacy;
+- Step 9 : Create Row Level security For Data Privacy
 
-[Manager Email] = USERPRINCIPALNAME() ||            
-[Sales] = USERPRINCIPALNAME() ||                   
-[Master User] = USERPRINCIPALNAME() ||              
-[Super User] = USERPRINCIPALNAME()
+Snap of RLS ,
+
+![image](https://github.com/MaliPadya/Power_BI/assets/170869800/ef19c2ce-2ebf-4ae1-9c67-bda3a1fbdaed)
+
+
+- Step 10 : Published report on Power Bi Service and scheduled daily Refresh
+
            
-           
-In our dataset, Some parameters were assigned value 0, representing those parameters are not applicable for some customers.
-
-All these values have been ignored while calculating average rating for each of the parameters mentioned above.
-
-- Step 12 : In the report view, under the insert tab, two text boxes were added to the canvas, in one of them name of the airlines was mentioned & in the other one company's tagline was written.
-- Step 13 : In the report view, under the insert tab, using shapes option from elements group a rectangle was inserted & similarly using image option company's logo was added to the report design area. 
-- Step 14 : Calculated column was created in which, customers were grouped into various age groups.
-
-for creating new column following DAX expression was written;
-       
-        Age Group = 
-        
-        if(airline_passenger_satisfaction[Age]<=25, "0-25 (25 included)",
-        
-        if(airline_passenger_satisfaction[Age]<=50, "25-50 (50 included)",
-        
-        if(airline_passenger_satisfaction[Age]<=75, "50-75 (75 included)",
-        
-        "75-100 (100 included)")))
+  
         
 Snap of new calculated column ,
 
