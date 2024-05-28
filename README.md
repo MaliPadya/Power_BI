@@ -37,7 +37,7 @@ A card visual was used to represent count of Closed_Jobs.
 ![image](https://github.com/MaliPadya/Power_BI/assets/170869800/c106b7c3-071a-4928-a0f0-18e6ecf49f3d)
 
         
- - Step 16 : New measure was created to find  Candidate Markup_%,
+ - Step 11 : New measure was created to find  Candidate Markup_%,
  
  Following DAX expression was written to find Candidate Markup_%,
  
@@ -49,7 +49,7 @@ A card visual was used to represent count of Closed_Jobs.
  ![image](https://github.com/MaliPadya/Power_BI/assets/170869800/4c933e84-2b33-4988-8cb4-2bb4ac04ee89)
 
  
- - Step 17 : New measure was created to calculate Jobs which are in 0 Subs.
+ - Step 12 : New measure was created to calculate Jobs which are in 0 Subs.
  
  Following DAX expression was written to find count of 0 Sub Jobs,
  
@@ -58,6 +58,9 @@ A card visual was used to represent count of Closed_Jobs.
  A card visual was used to represent this Jobs which are in 0 Subs. 
  
  ![image](https://github.com/MaliPadya/Power_BI/assets/170869800/715f389d-75be-4b3b-9093-75555a16479b)
+
+
+- Step 13 : Publish Dashboard On power Bi service and Scheduled Daily Refresh
  
 
 
