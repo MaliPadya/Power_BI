@@ -17,7 +17,12 @@ The VMS (Vendor Management System) Power BI dashboard provides managers with com
 - Step 6 : Created Vertual Date Column using "CalenderAuto" DAX
 - Step 7 : used differend relationship for different calculation according to defined parameter using "USERELATIONSHI" Function
 - Step 8 : create Ignore table if i want to ignore some entries
-- Step 9 : Create Row Level security For Data Privacy
+- Step 9 : Create Row Level security For Data Privacy;
+
+[Manager Email] = USERPRINCIPALNAME() ||            
+[Sales] = USERPRINCIPALNAME() ||                   
+[Master User] = USERPRINCIPALNAME() ||              
+[Super User] = USERPRINCIPALNAME()
            
            
 In our dataset, Some parameters were assigned value 0, representing those parameters are not applicable for some customers.
